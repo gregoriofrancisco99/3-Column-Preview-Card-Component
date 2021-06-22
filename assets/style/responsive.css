@@ -1,0 +1,21 @@
+@media(max-width: 720px) {
+    body {
+        height: 180vh;
+    }
+    
+    main section {
+        flex-direction: column;
+    }
+
+    main section .card {
+    height: auto;
+    }
+
+    main section .card p, main section .card a {
+        margin: 1em 0;
+    }
+    
+    main section .card h1 {
+        margin: 2em 0 0.5em 0;
+    }
+}
