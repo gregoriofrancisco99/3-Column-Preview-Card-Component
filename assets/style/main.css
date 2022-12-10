@@ -7,29 +7,26 @@
     box-sizing: border-box;
 }
 
+a{
+    text-decoration: none;
+    color: #000;
+}
+
 body {
     background: hsl(0, 0%, 95%);
+    width: 100%;
     height: 100vh;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    flex-direction: column;
 }
 
 main {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
+    height: 100vh;
 }
 
-main section {
-    width: 70%;
-    height: 70vh;
+section {
+    width: 910px;
+    margin: 10rem auto 0;
+
 
     display: flex;
     flex-direction: row;
@@ -40,54 +37,44 @@ main section {
 
     border-radius: 0.5em;
 }
-
-main section .card {
-    height: 100%;
-    padding: 2.5em 3.6em 0 3.6em;
-
-
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-evenly;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-content: flex-start;
+article:first-child {
+    background: url(./../../images/icon-sedans.svg) no-repeat hsl(31, 77%, 52%);
+    background-position: 17% 10%;
+    background-size: 20%;
+}
+article:nth-child(2) {
+    background: url(./../../images/icon-suvs.svg) no-repeat hsl(184, 100%, 22%);
+    background-position: 17% 10%;
+    background-size: 20%;
+}
+article:last-child {
+    background: url(./../../images/icon-luxury.svg) no-repeat hsl(179, 100%, 13%);
+    background-position: 17% 10%;
+    background-size: 20%;
 }
 
-main section .card p, main section .card a {
-    font-family: 'Lexend Deca', sans-serif;
-    font-size: 0.865em;
-    color: hsla(0, 0%, 100%, 0.75);
+article {
+    padding: 7.5rem 3.25rem 4rem;
 }
 
-main section .card h1 {
+article h1 {
+    margin-bottom: 1.6rem;
     font-family: 'Big Shoulders Display', sans-serif;
-    font-size: 2.2em;
+    font-size: 2.5rem;
     text-transform: uppercase;
 
     color: hsl(0, 0%, 95%);
 }
 
-main section .card:first-child {
-    background: url(./../../images/icon-sedans.svg) no-repeat hsl(31, 77%, 52%);
-    background-position: 20% 8%;
-    background-size: 17%;
+article p {
+    margin-bottom: 6.1rem;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.9em;
+    line-height: 1.55rem;
+    color: hsla(0, 0%, 100%, 0.75);
 }
-main section .card:nth-child(2) {
-    background: url(./../../images/icon-suvs.svg) no-repeat hsl(184, 100%, 22%);
-    background-position: 20% 8%;
-    background-size: 17%;
-}
-main section .card:last-child {
-    background: url(./../../images/icon-luxury.svg) no-repeat hsl(179, 100%, 13%);
-    background-position: 20% 8%;
-    background-size: 17%;
-}
-
-main section .card .btn {
-    width: 10em;
-    padding: 1em;
-    margin-top: 3em;
+article a {
+    padding: .8rem 2rem;
 
     background: hsl(0, 0%, 95%);
 
@@ -98,26 +85,20 @@ main section .card .btn {
     border-radius: 3em;
 
     transition: all ease 0.3s;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.9em;
+    color: hsla(0, 0%, 100%, 0.75);
 }
-
-main section .card:first-child .btn {
+article:first-child a {
     color: hsl(31, 77%, 52%);
 }
-main section .card:nth-child(2) .btn {
+article:nth-child(2) a {
     color: hsl(184, 100%, 22%);
 }
-main section .card:last-child .btn {
+article:last-child a {
     color: hsl(179, 100%, 13%);
 }
-
-main section .card .btn:hover {
-    width: 10em;
-    padding: 1em;
-margin-top: 3em;
-
-    background: transparent;
-
+article a:hover {
+    background-color: inherit;
     color: #fff;
-
 }
-
